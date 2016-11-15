@@ -8,6 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+     //se crea boton que enviara al segundo activity
      Button boton;
 
     @Override
