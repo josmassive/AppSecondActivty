@@ -9,7 +9,7 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-     //se crea boton que enviara al segundo activity
+     //se crean objetos que enviara al segundo activity
      Button boton;
      EditText editText;
 
@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //se enlazan objetos con el bundle
         boton = (Button) findViewById(R.id.boton);
         editText = (EditText)findViewById(R.id.editText);
 
@@ -25,6 +26,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
+
+    //este metodo click se autogenero cuando se declaro el objeto boton
     @Override
     public void onClick(View v) {
         switch (v.getId()){
