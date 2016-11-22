@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-
     //este metodo click se autogenero cuando se declaro el objeto boton
     @Override
     public void onClick(View v) {
