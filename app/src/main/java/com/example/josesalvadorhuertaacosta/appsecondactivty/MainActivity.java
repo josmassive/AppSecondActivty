@@ -7,11 +7,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
      //se crean objetos que enviara al segundo activity
      Button boton;
      EditText editText;
+
+    String url = "http://172.16.1.19/pruebasPP/datosAndroid.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +29,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
+    public String enviarDatosGET(){
+        URL url = null;
+
+    }
+
     //este metodo click se autogenero cuando se declaro el objeto boton
     @Override
     public void onClick(View v) {
@@ -34,7 +42,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 //pasar a new activity
                 String dato = editText.getText().toString();
-                Intent intent = new Intent(MainActivity.this, secondActivity.   class);
+                Intent intent;
+                intent = new Intent(MainActivity.this, secondActivity.class);
 
                 //envio de datos
                 intent.putExtra("DATO", dato);
